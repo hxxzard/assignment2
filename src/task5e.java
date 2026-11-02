@@ -11,8 +11,11 @@ public class task5e {
         int row2 = scanner.nextInt();
         int col2 = scanner.nextInt();
 
-        if (row1 == row2 || col1 == col2 ||
-                Math.abs(row1 - row2) == Math.abs(col1 - col2)) {
+        int rowDiff = Math.abs(row1 - row2);
+        int colDiff = Math.abs(col1 - col2);
+
+        if ((rowDiff == 2 && colDiff == 1) ||
+                (rowDiff == 1 && colDiff == 2)) {
 
             System.out.println("YES");
 
